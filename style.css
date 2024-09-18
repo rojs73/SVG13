@@ -1,7 +1,99 @@
-.shapes {
-  display:flex;
+body {
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap:30px;
-  margin-top: 50px;;
+  height: 100vh;
+  background-color: rgba(231, 231, 52, 0.673);
+  margin: 0;
+}
+
+.shape {
+  overflow: visible; 
+}
+
+.shapes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px; 
+  align-items: center;
+  position: relative; 
+}
+
+.square-container {
+  position: relative;
+  left: -250px; 
+}
+
+.rectangle-container {
+  position: relative;
+  left: 250px; 
+}
+
+.circle {
+  fill: #ff6347; 
+  stroke: blue;
+  stroke-width: 7;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.9);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.square {
+  fill: pink;
+  stroke: maroon;
+  stroke-width: 1;
+  animation: rotate 3s infinite;
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+
+.ellipse {
+  fill: black;
+  stroke: white;
+  stroke-width: 15;
+  animation: move 4s infinite;
+}
+
+@keyframes move {
+  0% {
+      transform: translateX(0);
+  }
+  50% {
+      transform: translateX(45px);
+  }
+  100% {
+      transform: translateX(10px);
+  }
+}
+
+
+.rectangle {
+  fill: orangered;
+  stroke: navy;
+  stroke-width: 6;
+  transition: fill 0.1s; 
+}
+
+.rectangle-container:hover .rectangle {
+  fill: rgb(44, 203, 105);
+  stroke: rgb(203, 52, 90);
+  stroke-width: 9;
 }

@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SVG </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<div class="shapes">
-
-<svg  width="800" height="200">
-  <rect x="10" y="60" width="100" height="100"/>
-</svg>
-
-<svg width="800" height="200">
-  <rect x="130" y="60" width="150" height="100"/>
-</svg>
-
-<svg width="800" height="200">
-  <circle cx="350" cy="110" r="50"/>
-</svg>
-
-<svg width="800" height="200">
-  <ellipse cx="500" cy="110" rx="80" ry="50"/>
-</svg>
-
-</div>
-
-
 <body>
-  
+
+    <div class="shapes-container">
+     
+        <svg width="150" height="150" class="shape">
+            <circle class="circle" cx="75" cy="75" r="50" />
+        </svg>
+
+   
+        <svg width="150" height="150" class="shape square-container">
+            <rect class="square" x="25" y="25" width="100" height="100" />
+        </svg>
+
+      
+        <svg width="150" height="150" class="shape">
+            <ellipse class="ellipse" cx="75" cy="75" rx="70" ry="40" />
+        </svg>
+
+        <svg width="150" height="150" class="shape rectangle-container">
+            <rect class="rectangle" x="15" y="40" width="120" height="70" />
+        </svg>
+
+    </div>
+    
 </body>
-
-
 </html>
