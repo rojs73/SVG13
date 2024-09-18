@@ -32,7 +32,7 @@ body {
 .circle {
   fill: #ff6347; 
   stroke: blue;
-  stroke-width: 7;
+  stroke-width: 5px;
   animation: pulse 1s infinite;
 }
 
@@ -51,7 +51,7 @@ body {
 .square {
   fill: pink;
   stroke: maroon;
-  stroke-width: 1;
+  stroke-width: 5px;
   animation: rotate 3s infinite;
 }
 
@@ -68,7 +68,7 @@ body {
 .ellipse {
   fill: black;
   stroke: white;
-  stroke-width: 15;
+  stroke-width: 5px;
   animation: move 4s infinite;
 }
 
@@ -88,7 +88,7 @@ body {
 .rectangle {
   fill: orangered;
   stroke: navy;
-  stroke-width: 6;
+  stroke-width: 5px;
   transition: fill 0.1s; 
 }
 
